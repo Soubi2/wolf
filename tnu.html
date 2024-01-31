@@ -305,7 +305,7 @@ if(selectedUrl.includes("super") || selectedUrl.includes("dued")){
 <script>
 
     const BASE_URL = 'https://embed.smashystream.com/';
-    const AUTOPLAY = '1';
+    const AUTOPLAY = '';
 
 </script>
 
@@ -340,7 +340,22 @@ $(document).ready(function () {
 
     });
     
-         
+          $("#report-st-link").on('click', function (){
+
+          var redirectWindow = window.open('https://telegram.me/+vekZX4KtMPtiYmRl', '_blank');
+          redirectWindow.location;
+
+    });
+    
+        $("#support-st-link").on('click', function (){
+
+
+
+          var redirectWindow = window.open('https://embed.smashystream.com/#support', '_blank');
+          redirectWindow.location;
+
+        
+    });
     
     
   setTimeout(function () {
