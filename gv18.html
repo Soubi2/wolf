@@ -23,8 +23,10 @@
     <script>
         const params = new URL(location.href).searchParams;
         const urll = params.get('goto');
+        const s = params.get('s');
+        const e = params.get('e');
         var para1=document.getElementById('myframe');  
-        para1.src = "https://vidload.eu/embed/"+urll;        
+        para1.src = "https://vidload.eu/embed/series?tmdb="+urll+"&sea="+s+"&epi="+e;     
      </script>
 </body>
 </html>
