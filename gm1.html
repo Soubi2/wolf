@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            .d-none {
+              display: none;
+            }
+            body {
+                    margin: 0;
+                }
+            iframe {
+                display: block;
+                background: #000;
+                border: none;
+                height: 100vh;
+                width: 100vw;
+            }
+          </style>
+          
+    </head>
+<body>
+
+    <iframe id="myframe"  <iframe width="560" height="315" allowfullscreen allow="autoplay; fullscreen; picture-in-picture; xr-spatial-tracking; encrypted-media"></iframe>
+></iframe>
+    <script>
+        const params = new URL(location.href).searchParams;
+        const urll = params.get('goto');
+        var para1=document.getElementById('myframe');  
+        para1.src = "http://www.elahmad.com/tv/watchtv.php?id=aljadeed";        
+     </script>
+</body>
+</html>
