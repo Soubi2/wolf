@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            .d-none {
+              display: none;
+            }
+            body {
+                    margin: 0;
+                }
+            iframe {
+                data=1;
+                display: block;
+                background: #000;
+                background-image: none;
+                 border: none;
+                height: 100vh;
+                width: 100vw;
+            }
+          </style>
+          
+    </head>
+<body>
+    <iframe id="player_iframe"  frameborder="0" scrolling="no"  allowfullscreen="yes" allow="autoplay" style="width="100%" height="100%""></iframe>
+          
+    <script>
+        const params = new URL(location.href).searchParams;
+        const urll = params.get('goto');
+        var para1=document.getElementById('player_iframe');  
+        para1.src = "https://vidsrc.pm/embed/tv/"+urll;        
+     </script>
+</body>
+</html>
