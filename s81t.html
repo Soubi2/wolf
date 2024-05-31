@@ -11,7 +11,6 @@
             iframe {
                 display: block;
                 background: #000;
-                background-image: none;
                 border: none;
                 height: 100vh;
                 width: 100vw;
@@ -20,9 +19,7 @@
           
     </head>
 <body>
-    <iframe id="myframe" height="100%" width="100%" frameborder="0" allowfullscreen=true></iframe>
-               
-             
+    <iframe id="myframe"  width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
     <script>
         const params = new URL(location.href).searchParams;
         const urll = params.get('goto');
