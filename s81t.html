@@ -11,20 +11,20 @@
             body {
                     margin: 0;
                 }
-                 }
             iframe {
+                data=1;
                 display: block;
                 background: #000;
+                background-image: none;
                 border: none;
                 height: 100vh;
                 width: 100vw;
             }
-
           </style>
           
     </head>
 <body>
-    <iframe id="player_iframe"  height="100%" width="100%"  src="para1.src" frameborder="0" allowfullscreen=true></iframe>
+    <iframe id="player_iframe"  src=" para1.src" frameborder="0" scrolling="no" allowfullscreen="yes" style="height: 100%; width: 100%;"></iframe>
           
     <script>
         const params = new URL(location.href).searchParams;
