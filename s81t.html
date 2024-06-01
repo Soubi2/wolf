@@ -1,3 +1,7 @@
+<div class="mikd vbox">
+			<div class="video_box v_box_xiao ">
+				
+				<div class="videoplay">
 <html>
     <head>
         <style type="text/css">
@@ -7,6 +11,7 @@
             body {
                     margin: 0;
                 }
+                 }
             iframe {
                 display: block;
                 background: #000;
@@ -14,16 +19,20 @@
                 height: 100vh;
                 width: 100vw;
             }
+
           </style>
           
     </head>
 <body>
-    <iframe id="myframe" height="100%" width="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+    <iframe id="player_iframe"  height="100%" width="100%"  src="para1.src" frameborder="0" allowfullscreen=true></iframe>
+          
     <script>
         const params = new URL(location.href).searchParams;
         const urll = params.get('goto');
-        var para1=document.getElementById('myframe');  
+        var para1=document.getElementById('player_iframe');  
         para1.src = "https://vidsrc.xyz/embed/tv/"+urll;        
      </script>
 </body>
 </html>
+</div>
+</div>
